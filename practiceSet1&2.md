@@ -1,4 +1,4 @@
- Practice Set-1 And Set-2 Provided by Ram Sir
+/* Practice Set-1 And Set-2 Provided by Ram Sir
 
 
 Practice Set -I (C Programming)
@@ -34,6 +34,8 @@ arithmetic operations (add, subtract, multiply and divide) using switch case.
 
 _________________________________________________________________________
 
+
+*/
 
 
 1. #include<stdio.h>

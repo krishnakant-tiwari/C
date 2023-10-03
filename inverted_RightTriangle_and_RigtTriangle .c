@@ -22,6 +22,9 @@ int main()
     return 0;
 }
 
+/*
+
+
 # Output Console 
 ******
 *****
@@ -35,3 +38,7 @@ int main()
 ****
 *****
 ******
+
+
+
+*/
