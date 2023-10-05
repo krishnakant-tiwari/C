@@ -3,12 +3,12 @@
 #include<stdio.h>        
 int main()
 {
-    char str1[50]="Ram ";
-    char str2[50]="Narayan ";
-    char str3[50]="Tiwari Sir";
-    char str[50];
+    char str1[5]="Ram ";
+    char str2[8]="Narayan ";
+    char str3[15]="Tiwari Sir";
+    char str[30];
 
-    int i,j,k;
+    int i,j,k,a;
 
     for( i=0; str1[i]!='\0'; i++ )
     {
@@ -29,14 +29,14 @@ int main()
 
     str[i]='\0';
 
-    for( int a=0; str[a]!='\0'; a++ )
+    for( a=0; str[a]!='\0'; a++ )
     {
         printf("%c",str[a]);
     }
     
     // Or print str
 
-    printf("\n %s",str);
+    printf("\n\nAnswer String\n\n%s\n\n",str);
 
     return 0;
 }
