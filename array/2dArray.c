@@ -2,7 +2,7 @@
 
 int main() {
 
-    int arr[5][5];
+    int arr[5][5];  // declaring 2-diamentional array
 
     printf("Enter the array elements : ");
 
