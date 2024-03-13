@@ -4,18 +4,18 @@
 #include<stdlib.h>
 #define maxSize 5
 
-int top = -1;
-int stack[maxSize];
+int top = -1;        //intialzing top with -1 as array starts from 0 index -1 will show no element in the stack
+int stack[maxSize];  // declaring array to use as stack
 
-void push();
-void pop();
-void show();
+void push();         // function declaration
+void pop();          // function declaration
+void show();         // function declaration
 
 int main()
 {
     int choice;
 
-    while(1)
+    while(1)      // while loop for infinite attempts
     {
         printf("Perform operations on the stack:\n");
         printf("1.Push the element\n2.Pop the element\n3.Show the elements\n4.Exit\n\n");
@@ -37,7 +37,7 @@ int main()
             break;
 
             case 4:
-            exit(0);
+            exit(0);              // loop break condition
 
             default:
             printf("Invalid Choice!\n");
@@ -101,6 +101,8 @@ void show()
     else 
     {
         printf("Elements in the stack are:\n");
+
+        // printing stack elements
         for(int i=top; i>=0; i=i-1)
         {
             printf("%d\n", stack[i]);
