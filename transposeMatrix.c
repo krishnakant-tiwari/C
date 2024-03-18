@@ -41,9 +41,7 @@ int main()
       for(int j=0; j<=2; j++)
 
       {
-
-      printf("%d ",a1[j][i]);
-
+        printf("%d ",a1[j][i]);
       }
 
       printf("\n");
