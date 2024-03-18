@@ -3,10 +3,10 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int stack[100];
+int stack[100];           // declaring static size of the stack
 int top = -1;
 
-void push(int size)
+void push(int size)       // function for push operation
 {
     if(top == size - 1)
     {
@@ -19,7 +19,7 @@ void push(int size)
     }
 }
 
-void pop()
+void pop()              // function for pop operation
 {
     if(top == -1)
     {
@@ -31,7 +31,7 @@ void pop()
     }
 }
 
-void display()
+void display()            // function for display operation
 {
     if(top == -1)
     {
@@ -52,12 +52,12 @@ int main()
 {
     int size, choice;
 
-    printf("Enter the size of the stack:");
-    scanf("%d", &size);
+    printf("Enter the size of the stack:");  
+    scanf("%d", &size);                      // Taking size of the stack by user
 
-    while(1)
+    while(1)                     // infinite loop
     {
-        printf("\n1 for Push");
+        printf("\n1 for Push");   
         printf("\n2 for Pop");
         printf("\n3 for Display");
         printf("\n4 for Exit\n");
@@ -65,7 +65,7 @@ int main()
         printf("Enter your choice: ");
         scanf("%d", &choice);
 
-        switch(choice)
+        switch(choice)                  // selection of operation
         {
             case 1 :
                 push(size);
@@ -80,13 +80,13 @@ int main()
                 break;
 
             case 4 :
-                exit(0);
+                exit(0);         // terminate program
 
             default :
                 printf("Invalid Choice\n");
                 break;
         }
     }
-    
+
     return 0;
 }
