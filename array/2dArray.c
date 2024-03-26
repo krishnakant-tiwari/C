@@ -4,7 +4,7 @@ int main() {
 
     int arr[5][5];  // declaring 2-diamentional array
 
-    printf("Enter the array elements : ");
+    printf("Enter the 25 array elements : ");
 
     for(int i=0; i<5; i++)  // getting the array elements by user 
     {
@@ -18,7 +18,7 @@ int main() {
     {
         for(int j=0; j<5; j++)
         {
-            printf("\t arr[%d][%d] = %d",i,j,arr[i][j]);
+            printf("\t arr[%d][%d] = %d",i+1,j+1,arr[i][j]);
         }
         printf("\n");
     }
